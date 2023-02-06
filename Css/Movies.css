@@ -1,0 +1,238 @@
+/*Mi fuente favorita hasta ahora*/
+@import url("https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap");
+
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --Azul: #00abfb;
+  --Naranja: #ffbf00;
+  --Blanco: #f3f6f4;
+  --Dark: rgb(31, 32, 42);
+  --Darkbg: rgb(16, 16, 17);
+  --Darky: rgb(70, 77, 103);
+}
+body {
+  font-family: "krub";
+  text-transform: capitalize;
+  background-color: var(--Darkbg);
+}
+h1,
+h2 {
+  color: var(--Blanco);
+}
+h2 {
+  margin: 2rem 0;
+}
+a {
+  text-decoration: none;
+  color: var(--Blanco);
+}
+/*----------------------------------*/
+
+/*------------MENU------------------*/
+.container {
+  background-color: var(--Dark);
+  width: auto;
+}
+.menu__container {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding: 1rem;
+}
+#nav__bar {
+  display: flex;
+}
+#nav__bar a {
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 1rem;
+}
+#nav__bar a:hover {
+  background-color: var(--Naranja);
+}
+/*McDonald*/
+.hamburguer {
+  content: url("./IMGs/Icons/hamburguer-icon.svg");
+  display: none;
+}
+/*barra de busqueda*/
+input#\search__bar {
+  position: relative;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: var(--Darky);
+  border-bottom-left-radius: 0%;
+  border-bottom-right-radius: 0%;
+  color: var(--Blanco);
+}
+input::placeholder {
+  color: var(--Blanco);
+}
+input:focus {
+  outline: none;
+  border: none;
+}
+/*Ahora adaptamos el menu ooooh si compa*/
+@media (max-width: 767px) {
+  .web-logo {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .menu__container {
+    display: block;
+  }
+  #nav__bar a {
+    width: 100%;
+    text-align: center;
+    gap: 0.4rem;
+  }
+  #nav__bar {
+    display: none;
+    flex-direction: column;
+  }
+  .hamburguer {
+    display: block;
+  }
+  .search__bar {
+    display: flex;
+    flex-direction: column;
+  }
+  #search-results {
+    margin: 2rem auto;
+  }
+  #search-results a {
+    width: 21rem;
+  }
+}
+@media (min-width: 768px) {
+  #nav__bar a {
+    margin: 0 0.4rem;
+    border-radius: 0.7rem;
+    background-color: var(--Darky);
+  }
+  #nav__bar {
+    align-items: center;
+  }
+  .search__bar {
+    margin-left: 2rem;
+  }
+  .episode__name {
+    font-size: 0.8rem;
+  }
+}
+/*Menu finalizado*/
+
+/*---------------Bloque de peliculas------------------------*/
+.recents__container {
+  width: 80%;
+  margin: 0 auto;
+}
+.anime__name {
+  color: #ffbf00;
+  font-weight: bold;
+}
+.popular__animes {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.anime {
+  background-color: var(--Azul);
+  background-size: cover;
+  background-position: center;
+  height: 65vw;
+  border-radius: 0.4rem;
+}
+/*Adaptacion de peliculas*/
+@media (min-width: 480px) {
+  .popular__animes {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .anime {
+    height: 40vw;
+  }
+}
+@media (min-width: 768px) {
+  .popular__animes {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .recents__container {
+    width: 75%;
+  }
+  .anime {
+    height: 25vw;
+  }
+  #search-results a {
+    width: 11.8rem;
+  }
+  .pagination{
+    margin: 0 auto;
+    width: 30%;
+  }
+}
+@media (min-width: 1024px) {
+  .anime {
+    height: 25vw;
+  }
+}
+/*---------------------------------------------------*/
+/*Agregar
+  los before and after para el efecto hover de cada episodio*/
+
+.play__hover:hover::after {
+  content: url("../IMGs/Icons/play-icon.svg");
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.445);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.4rem;
+}
+
+/*Este es el pequeño cuadro de busqueda que aparecede
+  debajo de la bara de busqueda*/
+.search__bar {
+  position: relative;
+}
+#search-results {
+  position: absolute;
+  width: 100%;
+  right: 0%;
+  height: 18rem;
+  background-color: var(--Darky);
+  display: none;
+  flex-direction: column;
+  overflow: auto;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+#search-results::-webkit-scrollbar {
+  display: none;
+}
+#search-results a {
+  display: flex;
+  height: 12rem;
+  text-align: center;
+  font-size: 0.7rem;
+}
+#search-results a:hover {
+  background-color: unset;
+}
+#search-results a .anime {
+  width: 8rem;
+  height: 10rem;
+}
+/*-------------------------*/

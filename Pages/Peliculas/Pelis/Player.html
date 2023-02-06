@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive</title>
+  <link rel="stylesheet" href="../../../Style.css">
+  <link rel="stylesheet" href="../../../Css/Player.css">
+</head>
+<body>
+  <div class="container">
+    <div class="menu__container">
+      <div class="web-logo"><h1><a href="#">AnimeFENIX</a></h1>
+        <div class="hamburguer"></div>
+      </div>
+      <nav id="nav__bar">
+        <a href="../../../Index.html">inicio</a>
+        <a href="#">peliculas</a>
+        <a href="#">animes</a>
+        <div class="search__bar">
+          <input type="search" name="" id="search__bar" placeholder="Buscar Anime...">
+          <div id="search-results"></div>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <!--Contenedor Zeus-->
+  <div class="great__block">
+    <!--Reproductor-->
+    <div class="watch__container">
+      <div class="anime__playing__name">
+          <h3 id="anime__name">kimetsu no yaiba</h3>
+          <span class="cap__number">capitulo</span>
+          <span id="capitulo">1</span>
+      </div>
+      <div class="player">
+          <video src="" controls id="anime"></video>
+      </div>
+      <div class="episode__player__name">
+        <h3 id="name">el arco del tren infinito</h3>
+      </div>
+      <div class="player__buttons">
+          <div class="">
+            <button id="">anterior</button>
+            <button id="download">descargar</button>
+            <button id="">siguiente</button>
+          </div>
+      </div>
+    </div>
+    <!--Bloque de sinopsis-->
+    <div class="recomend__container">
+      <div class="recomends__name">
+        <h2>sinopsis</h2>
+    </div>
+      <div class="sinopsis">
+        <p>Tanjiro Kamado y sus amigos del Demon Slayer Corps
+           acompañan a Ky?jur? Rengoku, el Flame Hashira, para
+          investigar una misteriosa serie de desapariciones que
+          ocurren dentro de un tren aparentemente infinitamente
+           largo. Poco saben que Enmu, la última de las Lunas Inferiores
+          de los Doce Kizuki, también está a bordo y les ha preparado una trampa.</p>
+          <br>
+          <div class="movie_info_container">
+            <h3>informacion</h3>
+            <div class="movie__info">
+              <div class="info__quest">
+                <span>tipo:</span>
+                <span>idiomas:</span>
+                <span>duracion:</span>
+                <span>emitido:</span>
+              </div>
+              <!--Info del anime o peli-->
+              <div class="info__answers">
+                <span>pelicula</span>
+                <span>japones</span>
+                <span>1 hr 57 min</span>
+                <span>Oct 16 de 2020</span>
+              </div>
+              <div class="alternal__titles">
+                <span class="precuela">precuela</span>
+                <a href="">kimetsu no yaiba</a>
+                <span class="secuela">secuela</span>
+                <a href="">kimetsu no yaiba ; mugen Ressha-hen</a>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  <script src="../../../Js/jQuery.js"></script>
+  <script src="./Script.js"></script>
+  <script src="../../../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive</title>
+  <link rel="stylesheet" href="../../../../Style.css">
+  <link rel="stylesheet" href="../../../../Css/Player.css">
+</head>
+<body>
+  <div class="container">
+    <div class="menu__container">
+      <div class="web-logo"><h1><a href="#">AnimeFENIX</a></h1>
+        <div class="hamburguer"></div>
+      </div>
+      <nav id="nav__bar">
+        <a href="../../../Index.html">inicio</a>
+        <a href="#">peliculas</a>
+        <a href="#">animes</a>
+        <div class="search__bar">
+          <input type="search" name="" id="search__bar" placeholder="Buscar Anime...">
+          <div id="search-results"></div>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <!--Contenedor Zeus-->
+  <div class="great__block">
+    <!--Reproductor-->
+    <div class="watch__container">
+      <div class="anime__playing__name">
+          <h3 id="anime__name">don't toy with me - ijiranai nagatiro-san</h3>
+          <span class="cap__number">capitulo</span>
+          <span id="capitulo">1</span>
+      </div>
+      <div class="player">
+          <video src="" controls id="anime"></video>
+      </div>
+      <div class="episode__player__name">
+        <h3 id="name">anime</h3>
+      </div>
+      <div class="player__buttons">
+          <div class="">
+            <button id="anterior">anterior</button>
+            <button id="download">descargar</button>
+            <button id="siguiente">siguiente</button>
+          </div>
+      </div>
+    </div>
+    <!--Bloque de sinopsis-->
+    <div class="recomend__container">
+      <div class="recomends__name">
+        <h2>sinopsis</h2>
+    </div>
+      <div class="sinopsis">
+        <p>A la estudiante de secundaria Hayase Nagatoro le encanta
+           pasar su tiempo libre haciendo una cosa, ¡y eso es intimidar
+            a su Senpai! Después de que Nagatoro y sus amigos se topan 
+            con los dibujos del aspirante a artista, disfrutan intimidando 
+            sin piedad al tímido Senpai. Nagatoro decide continuar con su cruel 
+            juego y lo visita a diario para poder obligar a Senpai a hacer lo que
+             le interese en ese momento, especialmente si eso lo incomoda.</p>
+          <br>
+          <div class="movie_info_container">
+            <h3>informacion</h3>
+            <div class="movie__info">
+              <div class="info__quest">
+                <span>tipo:</span>
+                <span>idiomas:</span>
+                <span>episodios:</span>
+                <span>duracion:</span>
+                <span>emitido:</span>
+              </div>
+              <!--Info del anime o peli-->
+              <div class="info__answers">
+                <span>serie</span>
+                <span>japones</span>
+                <span>12</span>
+                <span>23 min.</span>
+                <span>Abr 11 de 2021</span>
+              </div>
+              <div class="alternal__titles">
+                <span class="precuela">precuela</span>
+                <a href="">none</a>
+                <span class="secuela">secuela</span>
+                <a href="">ijiranaide, nagatoro-san 2nd Attack</a>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  <script src="../../../Js/jQuery.js"></script>
+  <script src="./Script.js"></script>
+  <script src="../../../script.js"></script>
+</body>
+</html>
